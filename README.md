@@ -59,3 +59,11 @@ sqlcmd -S 10.3.2.4,1433 -U SA -P 'password'
 ```
 docker cp {file from} containerName:{file to}
 ```
+
+เพื่ม user ใหม่
+USE [master]
+GO
+CREATE LOGIN&nbsp;[test] WITH PASSWORD=N'test', DEFAULT_DATABASE=[master], CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF
+GO
+EXEC master..sp_addsrvrolemember @loginame = N'test', @rolename = N'sysadmin'
+GO
