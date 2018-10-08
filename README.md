@@ -49,7 +49,7 @@ brew install --no-sandbox mssql-tools
 #ACCEPT_EULA=y brew install --no-sandbox mssql-tools
 
 ```
-เมื่ติดตั้งเสร็จแล้วพร้อมเชื่อมต่อ
+เมื่อติดตั้งเสร็จแล้วพร้อมเชื่อมต่อ
 
 ```
 sqlcmd -S 10.3.2.4,1433 -U SA -P 'password'
