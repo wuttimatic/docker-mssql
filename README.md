@@ -55,3 +55,7 @@ brew install --no-sandbox mssql-tools
 sqlcmd -S 10.3.2.4,1433 -U SA -P 'password'
 ```
 
+## นำไฟล์เข้าไปยัง docker container
+```
+docker cp {file from} containerName:{file to}
+```
