@@ -7,8 +7,8 @@ sudo docker pull mcr.microsoft.com/mssql/server:2017-latest
 2. Run container image ขึ้นมา 
 ```
 sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=password' \
-   -p 1433:1433 --name sql2017 \
-   -d mcr.microsoft.com/mssql/server:2017-latest
+   -p 1433:1433 --name sql2019 \
+   -d mcr.microsoft.com/mssql/server:2019-latest
 ```
 3. View container
 ```
